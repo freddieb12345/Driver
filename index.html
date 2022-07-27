@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/styles.css">
+    <script src="https://kit.fontawesome.com/87461a7e6a.js" crossorigin="anonymous"></script>
+    <script src="./index.js" defer></script>
+</head>
+<body>
+    <section id="landing">
+        <nav>
+            <figure>
+                <img src="./assets/header_logo.png" alt="" id="personal-logo">
+            </figure>
+            <ul class="nav__link--list">
+                <li class="nav__link"> 
+                    <a href="#" class="
+                    nav__link--anchor
+                    link__hover-effect
+                    link__hover-effect--black
+                ">Home</a>
+                </li>
+                <li class="nav__link"> 
+                    <a href="#" class="
+                    nav__link--anchor
+                    link__hover-effect
+                    link__hover-effect--black
+                ">Search</a>
+                </li>
+                <li class="nav__link"> 
+                    <a href="#" class="
+                    nav__link--anchor
+                    link__hover-effect
+                    link__hover-effect--black
+                ">
+                    <button class="contact__button">Contact</button>
+                </a>
+                </li>
+                <li class="nav__link">
+                    <a href="#" class="
+                        nav__link--anchor
+                        link__hover-effect
+                        link__hover-effect--black
+                    "><i class="fa-solid fa-circle-half-stroke"></i></a>
+                </li>
+            </ul>
+        </nav>
+        <header>
+            <h1 class="header__title">The <b class="red">BEST</b> place in the <b class="red">UK</b> to get all your <b class="red">F1</b> related data</h1>
+            <h2 class="header__subtitle">Find all you need to know with <b class="red">Driver</b></h2>
+            <div class="input__wrapper">
+                <input type="search" id="search__input" class="landing__search" placeholder="Search by ..." onclick="moveCarOnPage(event)">
+                    <button class="click search__button" onclick="showSearchResults()">
+                        <div id="search__overlay">
+                            <i class="fa-solid fa-magnifying-glass search-icon"></i>
+                        </div>
+                        <div id="loading__overlay" class="display-none">
+                            <i class="fa-solid fa-spinner loading-icon"></i>
+                        </div>
+                    </button>
+                </input>
+            </div>
+            <figure class="fans__wrapper">
+                <img src="./assets/undraw_game_day_ucx9.svg" alt="" class="fans__img">
+                <figure class="car__wrapper car__wrapper--start">
+                    <img src="./assets/car.PNG" alt="">
+                </figure>
+            </figure>
+        </header>
+    </section>
+</body>
+</html>
