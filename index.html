@@ -13,7 +13,9 @@
     <section id="landing">
         <nav>
             <figure>
-                <img src="./assets/header_logo.png" alt="" id="personal-logo">
+                <a href="/index.html">
+                    <img src="./assets/header_logo.png" alt="" id="personal-logo">
+                </a>
             </figure>
             <ul class="nav__link--list">
                 <li class="nav__link"> 
@@ -24,27 +26,11 @@
                 ">Home</a>
                 </li>
                 <li class="nav__link"> 
-                    <a href="#" class="
+                    <a href="/results.html" class="
                     nav__link--anchor
                     link__hover-effect
                     link__hover-effect--black
                 ">Search</a>
-                </li>
-                <li class="nav__link"> 
-                    <a href="#" class="
-                    nav__link--anchor
-                    link__hover-effect
-                    link__hover-effect--black
-                ">
-                    <button class="contact__button">Contact</button>
-                </a>
-                </li>
-                <li class="nav__link">
-                    <a href="#" class="
-                        nav__link--anchor
-                        link__hover-effect
-                        link__hover-effect--black
-                    "><i class="fa-solid fa-circle-half-stroke"></i></a>
                 </li>
             </ul>
         </nav>
@@ -52,8 +38,9 @@
             <h1 class="header__title">The <b class="red">BEST</b> place in the <b class="red">UK</b> to get all your <b class="red">F1</b> related data</h1>
             <h2 class="header__subtitle">Find all you need to know with <b class="red">Driver</b></h2>
             <div class="input__wrapper">
-                <input type="search" id="search__input" class="landing__search" placeholder="Search by ..." onclick="moveCarOnPage(event)">
+                <div id="landing__search" class="landing__search">
                     <button class="click search__button" onclick="showSearchResults()">
+                        <b>Find all race results here</b>
                         <div id="search__overlay">
                             <i class="fa-solid fa-magnifying-glass search-icon"></i>
                         </div>
@@ -61,7 +48,7 @@
                             <i class="fa-solid fa-spinner loading-icon"></i>
                         </div>
                     </button>
-                </input>
+                </div>
             </div>
             <figure class="fans__wrapper">
                 <img src="./assets/undraw_game_day_ucx9.svg" alt="" class="fans__img">

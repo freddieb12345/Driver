@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body>
+    <section id="landing">
+        <nav>
+            <figure>
+                <a href="/index.html">
+                    <img src="./assets/header_logo.png" alt="" id="personal-logo">
+                </a>
+            </figure>
+            <ul class="nav__link--list">
+                <li class="nav__link"> 
+                    <a href="/index.html" class="
+                    nav__link--anchor
+                    link__hover-effect
+                    link__hover-effect--black
+                ">Home</a>
+                </li>
+                <li class="nav__link"> 
+                    <a href="/results.html" class="
+                    nav__link--anchor
+                    link__hover-effect
+                    link__hover-effect--black
+                ">Search</a>
+                </li>
+            </ul>
+        </nav>
+    </section>
+    <section id="filter__menu" class="filter__menu">
+        <select name="" id="year-filter" class="filter" onchange="getYearOnChange(event)">
+            <option value="" disabled selected>Select Year</option>
+            <option value="2016">2016</option>
+            <option value="2017">2017</option>
+            <option value="2018">2018</option>
+            <option value="2019">2019</option>
+            <option value="2020">2020</option>
+            <option value="2021">2021</option>
+            <option value="2022">2022</option>
+        </select>
+        <select name="" id="round-filter" class="filter" onchange="getRoundOnChange(event)">
+            
+        </select>
+    </section>
+    <section id="results">
+        <table class="results__table--header-table">
+            <tr class="results__table--headers">
+                <th class="results__table--header">Position</th>
+                <th class="results__table--header">Driver Number</th>
+                <th class="results__table--header">Drvier Name</th>
+                <th class="results__table--header">Constructor</th>
+                <th class="results__table--header">Laps</th>
+                <th class="results__table--header">Grid</th>
+                <th class="results__table--header">Time</th>
+                <th class="results__table--header">Fastest Lap</th>
+                <th class="results__table--header">Fastest Lap Rank</th>
+                <th class="results__table--header">Status</th>
+                <th class="results__table--header">Points</th>
+            </tr>
+        </table> 
+        <table class="results__table">
+
+        </table>   
+        
+    </section>
+</body>
+<script src="results.js"></script>
+</html>
