@@ -4,7 +4,7 @@ let constrastToggle = false;
 
 async function showSearchResults(event) {
     const searchInput = document.getElementById("landing__search").value
-    localStorage.setItem("search",searchInput)
+    localStorage.setItem("search", searchInput)
     toggleLoading()
     moveCarOffPage()
     setTimeout(() => {
