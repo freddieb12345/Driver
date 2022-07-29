@@ -12,6 +12,10 @@ async function showSearchResults(event) {
     },1000)
 }
 
+function goToHomePage(){
+    window.location.href = `${window.location.href}index.html`
+}
+
 function toggleLoading() {
     const search = document.getElementById("search__overlay")
     const loading = document.getElementById("loading__overlay")
