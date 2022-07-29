@@ -8,7 +8,7 @@ async function showSearchResults(event) {
     toggleLoading()
     moveCarOffPage()
     setTimeout(() => {
-        window.location.href = `${window.location.href}/results.html`
+        window.location.href = `${window.location.href}results.html`
     },1000)
 }
 

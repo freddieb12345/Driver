@@ -12,9 +12,12 @@
 }
 
 body{
-    overflow-x: hidden;
     background-color: #feeeee;
 }
+.index__body{
+    overflow-x: hidden;
+}
+
 
 li {
     list-style: none;
@@ -64,6 +67,7 @@ nav{
 
 .nav__link--list{
     display: flex;
+    margin-right: 12px;
 }
 
 .nav__link{
@@ -155,13 +159,14 @@ header{
     align-items: center;
     justify-content: center;
     width: 100%;
-    max-width: 730px;
+    max-width: 600px;
     margin-top: 40px;
 }
 
 .landing__search{
     width: 100%;
     height: 70px;
+    margin: 0px 16px;
 }
 
 .search__button{
@@ -206,21 +211,21 @@ header{
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 600px;
+    width: 60%;
 }
 
 .car__wrapper{
     position: absolute;
-    transition: all 1000ms ease;
+    transition: all 50000ms ease;
 }
 
 .car__wrapper--start {
-    transform: translateX(-100vw);
+    transform: translateX(-150vw);
     bottom: 0px;
 }
 
 .car__wrapper--search {
-    transform: translateX(80vw);
+    transform: translateX(150vw);
     bottom: 0px;
 }
 
@@ -230,49 +235,87 @@ header{
     width: 100%;
     display: flex;
     justify-content: space-evenly;
-    max-width: 1200px;
+    max-width: 1300px;
     margin: 0 auto;
 }
 
 .filter{
-    width: 100%;
+    width: 50%;
     text-align: center;
     font-size: 32px;
     font-weight: 500;
+    background-color: #feeeee;
 }
 
 /* RESULTS TABLE */
 
 #results{
     width: 100%;
-    max-width: 1200px;
+    max-width: 1300px;
     margin: 0 auto;
 }
-
-.results__table, tr, .results__table--header-table{
-    width: 100%;
-}  
 
 .results__table--header-table{
     font-size: 16px;
 }
 
+table{
+    width: 1300px;
+}
 
 tr{
-    padding: 0 2%;
+    width: 100%;
+    padding: 0 16px;
     border: 1px solid black;
 }
 
 th, td{
-    width: 9%;
+    width: 10%;
+    max-width: 110px;
     text-align: center;
     padding: 12px;
+    margin: 0px 5%;
 }
 
 tbody{
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin: 0 auto;
     width: 100%;
     border: 1px solid black;
+}
+
+
+@media (max-width: 768px) {
+    .header__title{
+        font-size: 36px;
+        padding: 0px 16px;
+    }
+    .header__subtitle{
+        font-size: 16px;
+        text-align: center;
+    }
+    .landing__search{
+        width: 80%;
+    }
+    .search__button {
+        font-size: 24px;
+    }
+    .filter {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 550px) {
+    .contact__button{
+        text-align: center;
+    }
+    .nav__link{
+        display: none;
+    }
+    .contact__button{
+        max-height: 20px;
+        padding: 6px 20px;
+    }
 }
