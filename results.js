@@ -58,7 +58,6 @@ function tableHTML(result) {
     if(result.FastestLap) {
         fastestLapRank = result.FastestLap.rank
     }
-    console.log(window.innerWidth)
     return `<tr class="results__table--results">
         <td class="results__table--result">${result.position}</td>
         <td class="results__table--result">${result.number}</td>
