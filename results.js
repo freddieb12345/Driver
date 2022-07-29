@@ -28,7 +28,7 @@ async function getRoundData(year) {
     if (!year) {
         year = 2022
     }
-    const seasons = await fetch(`http://ergast.com/api/f1/${year}.json`)
+    const seasons = await fetch(`https://ergast.com/api/f1/${year}.json`)
     const seasonsData = await seasons.json()
     const roundsData = seasonsData.MRData.RaceTable.Races
     console.log(roundsData)
