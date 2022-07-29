@@ -23,5 +23,4 @@ function moveCarOffPage() {
     carEl.classList += " car__wrapper--search"
     carEl.classList.remove("car__wrapper--typing")
     carEl.classList.remove("car__wrapper--start")
-    console.log(carEl)
 }

@@ -31,7 +31,6 @@ async function getRoundData(year) {
     const seasons = await fetch(`https://ergast.com/api/f1/${year}.json`)
     const seasonsData = await seasons.json()
     const roundsData = seasonsData.MRData.RaceTable.Races
-    console.log(roundsData)
     const roundFilterEl = document.getElementById("round-filter")
     roundFilterEl.innerHTML = roundsData.map((round) => roundHTML(round)).join("")
 }
